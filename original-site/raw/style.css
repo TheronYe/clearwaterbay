@@ -1,0 +1,240 @@
+:root {
+  --text: #482010;
+  --gold: #d9b07a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--gold);
+  color: var(--text);
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--gold);
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 32px 0;
+}
+
+.about-btn {
+  position: relative;
+  z-index: 1;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  width: min(77px, 12.6vw);
+  aspect-ratio: 101 / 23;
+}
+
+.about-btn:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+}
+
+.about-btn img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+}
+
+.about-btn__default {
+  z-index: 1;
+}
+
+.about-btn__hover {
+  opacity: 0;
+  z-index: 2;
+}
+
+.about-btn:hover .about-btn__default,
+.about-btn:focus-visible .about-btn__default {
+  opacity: 0;
+}
+
+.about-btn:hover .about-btn__hover,
+.about-btn:focus-visible .about-btn__hover {
+  opacity: 1;
+}
+
+html[lang="en"] .about-btn {
+  width: 200px;
+  aspect-ratio: 306.16 / 59.4;
+  padding-top: 8px;
+  transform: translateY(6px);
+}
+
+html[lang="en"] .about-btn img {
+  top: 8px;
+}
+
+.lang {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.lang-toggle {
+  display: block;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  width: 42px;
+  height: 42px;
+}
+
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+.lang-toggle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  z-index: 3;
+}
+
+.lang.is-open .lang-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-menu a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.lang-menu a:hover,
+.lang-menu a:focus-visible {
+  transform: scale(1.06);
+  outline: none;
+}
+
+.lang-menu a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.lang-menu img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .header {
+    justify-content: flex-end;
+    padding: 20px 16px 0;
+  }
+
+  .about-btn {
+    width: min(84px, 23.8vw);
+    padding-top: 0;
+    transform: translate(8px, 2px);
+  }
+
+  .about-btn img {
+    top: 0;
+  }
+
+  html[lang="en"] .about-btn {
+    width: min(140px, 49vw);
+    padding-top: 8px;
+    transform: translate(6px, 0px);
+  }
+
+  html[lang="en"] .about-btn img {
+    top: 8px;
+  }
+
+  .lang-toggle,
+  .lang-menu a {
+    width: 32.4px;
+    height: 32.4px;
+  }
+}

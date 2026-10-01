@@ -1,0 +1,157 @@
+{
+  "root": ".",
+  "checked": 30,
+  "failed": 0,
+  "results": [
+    {
+      "file": "en/floorplan/2p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/floorplan/3p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/floorplan/4p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/floorplan/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/floorplan/special.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/location/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/privacy-policy.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/sales-info/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "en/vipform/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "floorplan/2p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "floorplan/3p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "floorplan/4p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "floorplan/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "floorplan/special.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "location/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "privacy-policy.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sales-info/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/floorplan/2p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/floorplan/3p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/floorplan/4p.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/floorplan/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/floorplan/special.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/location/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/privacy-policy.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/sales-info/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "sc/vipform/index.html",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "vipform/index.html",
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}
